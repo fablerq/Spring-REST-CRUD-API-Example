@@ -13,7 +13,7 @@ services:
     expose:
       - '3306'
     volumes:
-      - my-db:/var/lib/mysql
+      - ./my-db:/var/lib/mysql
   spring-service:
     build:
       context: .
